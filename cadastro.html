@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h1>Cadastro</h1>
-	<form>
+	<form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="post">
 		Login: <br/>
 		<input type="text" name="login"><br/>
 
@@ -19,20 +19,39 @@
 		<input type="text" name="nome"><br/>
 
 		Sexo: <br/>
-		<input type="radio" name="masculino"> Masculino<br/>
-		<input type="radio" name="feminino"> Feminino<br/>
+		<input type="radio" value="Masculino" name="sexo"> Masculino<br/>
+		<input type="radio" value="Feminino" name="sexo"> Feminino<br/>
 
 		E-mail: <br/>
 		<input type="text" name="email"><br/>
 
 		Interesses: <br/>
-		<input type="checkbox" name="interesses"> Futebol<br/>
-		<input type="checkbox" name="interesses"> Política<br/>
-		<input type="checkbox" name="interesses"> Economia<br/>
-		<input type="checkbox" name="interesses"> Carros<br/>
-		<input type="checkbox" name="interesses"> Celebridades<br/>
+		<input type="checkbox" value="Futebol" name="interesses"> Futebol<br/>
+		<input type="checkbox" value="Política" name="interesses"> Política<br/>
+		<input type="checkbox" value="Economia" name="interesses"> Economia<br/>
+		<input type="checkbox" value="Carros" name="interesses"> Carros<br/>
+		<input type="checkbox" value="Celebridades" name="interesses"> Celebridades<br/>
+
+		Estado: <br/>
+		<select name="estado">
+			<option value="" selected="Estado"></option>
+			<option value="PI">PI</option>
+			<option value="MA">MA</option>
+			<option value="CE">CE</option>
+			<option value="BA">BA</option>
+			<option value="PE">PE</option>
+			<option value="RN">RN</option>
+			<option value="PB">PE</option>
+			<option value="PB">SE</option>
+			<option value="AL">AL</option>
+		</select><br/>
+
+		Observações: <br/>
+		<textarea cols="150" name="observacao"> Observações</textarea><br/>
+
+		<br/>
 		
-		<input type="button" value="Enviar">
+		<input type="submit" value="Enviar">
 	</form>
 </body>
 
