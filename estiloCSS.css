@@ -1,8 +1,8 @@
 	body{
 		padding-left: 11em;
 		font-family: Georgia, "Times New Roman", Times, serif;
-		color: black;
-		background-color: white;}
+		color: purple;
+		background-color: #d8da3d;}
 
 		ul.navegacao{
 			list-style-type: none;
@@ -18,7 +18,7 @@
 			font-family: Helvica, Geneva, Arial, SunSans-Regular, sans-serif}
 
 		ul.navegacao li{
-			background: yellow;
+			background: white;
 			margin: 0.5em 0;
 			padding: 0.3em;
 			border-right: 1em solid black}
